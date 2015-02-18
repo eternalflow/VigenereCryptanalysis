@@ -15,7 +15,3 @@ def MrProper(dirtytext):
             if s.lower() in alphabet:
                 cleantext += s.lower()
     return cleantext
-
-dirty = textfromfile("big")
-clean = MrProper(dirty)
-texttofile(clean, "bigclean")
