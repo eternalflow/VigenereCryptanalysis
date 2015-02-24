@@ -47,7 +47,7 @@ class FrequencyAnalyzer:
 
     def __count_bigrams(self):
         bigrams = []
-        for j in range(len(self.text)):
+        for j in xrange(len(self.text)-1):
             bigrams.append(self.text[j:j+2])
         self.bigrams = Counter(bigrams)
 
